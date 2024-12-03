@@ -1,0 +1,327 @@
+.members-page {
+    background-color: var(--background);
+    padding: 80px 5% 40px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+/* Current Members */
+.members-section {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.member-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1.5rem;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    display: block;
+}
+
+.view-profile {
+    display: inline-block;
+    color: var(--secondary);
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+
+.member-card:hover .view-profile {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section Divider */
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--secondary), transparent);
+    margin: 4rem auto;
+    width: 80%;
+}
+
+/* Alumni Section */
+.alumni-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.alumni-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alumni-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.alumni-degree {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .members-page {
+        padding: 60px 5% 30px;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Leader Card */
+.leader-card {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.leader-card .member-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.leader-card .member-content:hover {
+    transform: translateY(-5px);
+}
+
+.leader-badge {
+    background: var(--secondary);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Alumni Cards */
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.alumni-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alumni-grad {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.alumni-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.alumni-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .leader-card .member-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+.leader-card {
+    max-width: 600px; /* Reduced from 800px */
+    margin: 0 auto 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem; /* Reduced padding */
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+}
+
+.leader-card .member-image {
+    margin: 0;
+    width: 200px; /* Reduced from 300px */
+    height: 200px; /* Reduced from 300px */
+}
+
+.leader-card .member-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.leader-card .member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+}
+
+.leader-card .view-profile {
+    display: inline-block;
+    color: var(--secondary);
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+
+.leader-card:hover .view-profile {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .leader-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .leader-card .member-image {
+        margin: 0 auto;
+    }
+
+    .leader-card .member-info {
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+}
+
+.associates-section {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.associates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.associate-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.associate-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.associate-card p {
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .associates-grid {
+        grid-template-columns: 1fr;
+    }
+}

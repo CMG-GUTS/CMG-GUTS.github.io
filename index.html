@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cancer Microbiology Group</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" type="image/png" href="assets/icons/GUTS - icon - fullcolor.svg">
     <link rel="apple-touch-icon" href="assets/icons/GUTS - icon - fullcolor.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/GUTS - icon - fullcolor.svgg">
@@ -19,10 +19,10 @@
          </a>
         <nav class="nav">
             <ul>
-                <li><a href="#research-narrative">Research Narrative</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#publications">Publications</a></li>
+                <li><a href="#research-narrative">Research</a></li>
+                <li><a href="pages/members.html">Members</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/publications.html">Publications</a></li>
             </ul>
         </nav>
     </div>
@@ -33,18 +33,11 @@
         </section>
         -->
 
-        <section id="research-narrative" class="section">
-            <h2>Research Narrative</h2>
-            <div class="content">
-                <p>Our research aims at preventing cancer development and progression by increasing our understanding of the gut microbiome and how it keeps us healthy as well as the underlying mechanisms for its role in cancer development.</p>
-                <p>My team has spent the past years collecting longitudinal mucosal biopsy samples of patients with a high-risk for colorectal cancer, including Lynch syndrome and Ulcerative colitis patients, to unravel host-microbe relationships that lead to early carcinogenesis. We have developed techniques to study the mucosal microbiome in detail both in vitro and in patient samples.</p>
-                <p>Our current projects focus on using bacterial biofilms, a plaque of bacteria on the gut epithelial surface, as potential diagnostic tool to visualize high-risk cancer precursor lesions as well as understanding the role of the gut microbiome in metastastic spread of tumour cells. Next to colon cancer, we are investigating the local breast microbiome and its potential role in treatment outcomes for estrogen-positive breast cancer.</p>
-            </div>
-        </section>
-
+        <!--
         <section id="team" class="section team">
             <h2>Our Team</h2>
         </section>
+        -->
 
         <section class="group-photo-section">
             <img src="assets/team-photos/group.jpg" alt="Cancer Microbiology Group Team" class="group-photo">
@@ -54,54 +47,84 @@
         <section id="team" class="section team">
 
             <div class="team-grid">
-                <div class="team-member">
-                    <img src="assets/team-photos/annemarie.jpg" alt="Dr. Annemarie Boleij">
-                    <h3>Dr. Annemarie Boleij</h3>
-                    <p>Group Leader</p>
-                </div>
-                <div class="team-member">
+                <a href="pages/members/floor.html" class="team-member">
                     <img src="assets/team-photos/floor.jpg" alt="Floor Baas">
                     <h3>Floor Baas</h3>
                     <p>PhD Candidate</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/team-photos/renske.jpg" alt="Renske Cremers">
-                    <h3>Renske Cremers</h3>
-                    <p>Research Technician</p>
-                </div>
-                <div class="team-member">
+                </a>
+                <a href="pages/members/annemarie.html" class="team-member">
+                    <img src="assets/team-photos/annemarie.jpg" alt="Dr. Annemarie Boleij">
+                    <h3>Dr. Annemarie Boleij</h3>
+                    <p>Group Leader</p>
+                </a>
+                <a href="pages/members/alem.html" class="team-member">
                     <img src="assets/team-photos/alem.jpg" alt="Alem Gusinac">
                     <h3>Alem Gusinac</h3>
                     <p>Bioinformatics Data Analyst</p>
-                </div>
-                <div class="team-member">
+                </a>
+                <a href="pages/members/renske.html" class="team-member">
+                    <img src="assets/team-photos/renske.jpg" alt="Renske Cremers">
+                    <h3>Renske Cremers</h3>
+                    <p>Research Technician</p>
+                </a>
+                <a href="pages/members/amy.html" class="team-member">
                     <img src="assets/team-photos/amy.jpg" alt="Amy Pittens">
                     <h3>Amy Pittens</h3>
                     <p>Intern</p>
-                </div>
+                </a>
+            </div>
+
+            <div class="see-more-container">
+                <a href="pages/members.html" class="see-more">
+                <span>Meet All Members</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="research-narrative" class="section">
+            <h2>Research Narrative</h2>
+            <div class="content">
+                <p>Our research aims at preventing cancer development and progression by increasing our understanding of the gut microbiome and how it keeps us healthy as well as the underlying mechanisms for its role in cancer development.</p>
+                <p>My team has spent the past years collecting longitudinal mucosal biopsy samples of patients with a high-risk for colorectal cancer, including Lynch syndrome and Ulcerative colitis patients, to unravel host-microbe relationships that lead to early carcinogenesis. We have developed techniques to study the mucosal microbiome in detail both in vitro and in patient samples.</p>
+                <p>Our current projects focus on using bacterial biofilms, a plaque of bacteria on the gut epithelial surface, as potential diagnostic tool to visualize high-risk cancer precursor lesions as well as understanding the role of the gut microbiome in metastastic spread of tumour cells. Next to colon cancer, we are investigating the local breast microbiome and its potential role in treatment outcomes for estrogen-positive breast cancer.</p>
             </div>
         </section>
 
         <section id="projects" class="section projects">
-            <h2>Projects</h2>
+            <h2>Highlighted Projects</h2>
             <div class="project-grid">
-                <div class="project-card">
+                <a href="pages/projects/guided-visualization.html" class="project-card">
                     <h3>Guided Visualization of High-risk Cancer Precursor Lesions</h3>
-                    <p>Sessile serrated lesions (SSLs) are considered precursors for the majority of right-sided CRC, but hard to detect during colonoscopy. Our project explores using bacterial biofilms as surrogate markers for precursor lesions.</p>
-                </div>
-                <div class="project-card">
+                </a>
+                <a href="pages/projects/biofilms-neoplasia.html" class="project-card">
                     <h3>Biofilms as Risk Factor for Neoplasia Development</h3>
-                    <p>We study how biofilms in ulcerative colitis patients may be linked to neoplasia development, connecting alterations in colonic microbiota to chronic inflammation and cancer pathogenesis.</p>
-                </div>
-                <div class="project-card">
+                </a>
+                <a href="pages/projects/breast-gut-microbiome.html" class="project-card">
                     <h3>The Breast-gut Microbiome Axis in ER+ Breast Cancer</h3>
-                    <p>Investigating the effects of neoadjuvant chemotherapy on the local breast and gut microbiome and its influence on treatment effectiveness.</p>
-                </div>
+                </a>
             </div>
+
+            <section class="projects-explore">
+                <div class="explore-card">
+                    <h3>Explore More Projects</h3>
+                    <p>Discover our research portfolio</p>
+                    <a href="pages/projects.html" class="explore-link">
+                        <svg class="explore-icon" viewBox="0 0 24 24" width="24" height="12">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" stroke-width="2"/>
+                            <path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>View All Projects</span>
+                    </a>
+                </div>
+             </section>
+
         </section>
 
         <section id="publications" class="section">
-            <h2>Publications</h2>
+            <h2>Highlighted Publications</h2>
             <div class="publications-content">
                 <div class="publication-year">
                     <h3>2024</h3>
@@ -122,8 +145,28 @@
                     </a>
                 </div>
             </div>
+            <div class="publications-explore">
+                <a href="pages/publications.html" class="publications-cta">
+                    <div class="publications-cta-content">
+                        <div class="cta-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <line x1="8" y1="7" x2="16" y2="7" stroke="currentColor" stroke-width="2"/>
+                                <line x1="8" y1="11" x2="16" y2="11" stroke="currentColor" stroke-width="2"/>
+                                <line x1="8" y1="15" x2="12" y2="15" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="cta-text">
+                            <h4>Explore Our Research Impact</h4>
+                            <p>Browse our publications</p>
+                            <span class="cta-link">View Publications</span>
+                        </div>
+                    </div>
+                </a>
+             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer-content">
             <h4>Contact Us</h4>
