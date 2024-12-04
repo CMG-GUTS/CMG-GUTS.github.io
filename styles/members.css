@@ -10,7 +10,6 @@
     font-size: 2rem;
 }
 
-/* Current Members */
 .members-section {
     max-width: 1200px;
     margin: 0 auto 4rem;
@@ -124,7 +123,6 @@
     }
 }
 
-/* Leader Card */
 .leader-card {
     max-width: 800px;
     margin: 0 auto 4rem;
@@ -229,11 +227,12 @@
     grid-template-columns: 1fr 1fr;
     background: white;
     border-radius: 12px;
-    padding: 1.5rem; /* Reduced padding */
+    padding: 1.8rem;
     text-decoration: none;
     color: inherit;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    justify-content: center;
 }
 
 .leader-card:hover {
@@ -242,8 +241,8 @@
 
 .leader-card .member-image {
     margin: 0;
-    width: 200px; /* Reduced from 300px */
-    height: 200px; /* Reduced from 300px */
+    width: 210px; /* Reduced from 300px */
+    height: 210px; /* Reduced from 300px */
 }
 
 .leader-card .member-image img {
@@ -251,13 +250,14 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    justify-content: center;
 }
 
 .leader-card .member-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 
 .leader-card .view-profile {

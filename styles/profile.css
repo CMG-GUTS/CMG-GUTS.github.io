@@ -1,0 +1,382 @@
+.profile-page {
+    background-color: var(--background);
+    padding: 80px 5% 40px;
+}
+
+.profile-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.profile-role {
+    color: var(--secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    color: var(--text);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: var(--secondary);
+}
+
+.profile-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-content section {
+    margin-bottom: 2rem;
+}
+
+.profile-content h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.profile-content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.research-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.research-section li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.research-section li::before {
+    content: '•';
+    color: var(--secondary);
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .profile-social {
+        justify-content: center;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+
+.profile-page {
+    background-color: var(--background);
+    padding: 80px 5% 40px;
+}
+
+.profile-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.profile-header {
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.profile-content {
+    padding: 2rem;
+}
+
+.profile-content section {
+    margin-bottom: 2.5rem;
+}
+
+.profile-content h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Tags styling */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tag {
+    background: var(--background);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+    border: 1px solid var(--secondary);
+}
+
+.tag:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .profile-social {
+        justify-content: center;
+    }
+
+    .tags-container {
+        justify-content: center;
+    }
+}
+
+.interests-section {
+    margin-bottom: 3rem;
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.interest-tag {
+    background: linear-gradient(to right, var(--background), white);
+    color: var(--primary);
+    padding: 0.5rem 1.1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.interest-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-color: var(--secondary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--background);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-content p {
+    color: var(--text);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .interest-tags {
+        justify-content: center;
+    }
+}
+
+.profile-page {
+    background-color: var(--background);
+    padding: 80px 5% 40px;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.profile-hero {
+    padding: 3rem;
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.profile-role {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-social {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-link {
+    color: var(--text);
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.profile-content {
+    padding: 0 3rem 3rem;
+}
+
+.profile-content section {
+    margin-bottom: 2.5rem;
+}
+
+.profile-content h2 {
+    color: var(--primary);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.bio-section p {
+    line-height: 1.7;
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .profile-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .profile-social {
+        justify-content: center;
+    }
+
+    .profile-content {
+        padding: 0 2rem 2rem;
+    }
+
+}
